@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/roommates_items_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/roommate_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Roommate"
+        android:textColor="@color/colorAccentSuperDark"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/items_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

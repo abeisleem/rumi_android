@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "100810397900",
+    "firebase_url": "https://poop-rumi.firebaseio.com",
+    "project_id": "poop-rumi",
+    "storage_bucket": "poop-rumi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100810397900:android:c5259a1f47559891",
+        "android_client_info": {
+          "package_name": "com.poop.rumi.rumi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100810397900-ranekuqi4l3brj391ocjcj9tu5e5j3f2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.poop.rumi.rumi",
+            "certificate_hash": "90b12b66e785569f50cd1dc8e0454e9de540c1a0"
+          }
+        },
+        {
+          "client_id": "100810397900-udoqe4a27rrucndr1tqv105qvk28bn3k.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "100810397900-lcuvm05i6snt4arohei4kouctdc1ss4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByhXHQi48psTsOZKfp4qYS8ZaYgErpu6k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100810397900-udoqe4a27rrucndr1tqv105qvk28bn3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

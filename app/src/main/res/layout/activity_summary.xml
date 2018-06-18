@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.poop.rumi.rumi.transaction.TransactionActivity"
+
+    android:orientation="vertical"
+
+    >
+
+    <!--android:background="@color/colorPrimary"-->
+
+
+    <RelativeLayout
+        android:id="@+id/topPanelButtons"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#feef"
+        >
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:background="@drawable/back_button"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/button_back"
+            android:layout_toStartOf="@+id/button_next"
+            android:text="Bill Code:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+
+            android:gravity="center_horizontal"
+
+            />
+
+        <TextView
+            android:id="@+id/share_code"
+            android:layout_width="182dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="fill_horizontal"
+            android:layout_toEndOf="@+id/button_back"
+            android:layout_toStartOf="@+id/button_next"
+            android:gravity="center"
+
+            android:hint="Receipt Code"
+            android:text="bsxml"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="Finish"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:background="@drawable/next_button"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimary"
+
+        >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+
+            android:text="Item Name"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+
+            android:gravity="center"
+
+
+            />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+
+            android:text="Price"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+
+            android:text="Owed"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+
+            android:gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:orientation="vertical"
+        android:background="#feef"
+
+        >
+
+        <ListView
+            android:id="@+id/vertical_list_participation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_add_splitters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/horizontal_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:background="#feef"
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">rumi</string>
+
+    <!-- Strings related to ocr -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="permission_storage_write_rationale">Permission to write to storage is needed for application</string>
+    <string name="permissions_not_granted">This application cannot run because it does not have certain permissions. The application will now exit.</string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="ocr_activity_main">OCR Receipt Parser</string>
+    <string name="picture_taken">Picture taken</string>
+    <string name="choose_items">items</string>
+    <string name="choose_prices">prices</string>
+    <string name="VerifyFirst">Please capture image and verify that you are satisfied with it before tapping on screen.</string>
+    <string name="tapOnItems">Tap on items only</string>
+    <string name="tapOnPrices">Tap on prices only</string>
+    <!--Unused (yet?)-->
+    <string name="read_text">Detect Text</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="ocr_success">Text read successfully</string>
+    <string name="ocr_failure">No text captured</string>
+    <string name="ocr_error">"Error reading text: %1$s"</string>
+    <string name="image_description">This ImageView holds most recently captured image to preview and validate it</string>
+
+
+    <!-- Strings related to login/register -->
+    <string name="prompt_name">Name</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="action_login_short">Login</string>
+    <string name="action_register">Register</string>
+    <string name="action_register_short">Register</string>
+    <string name="error_invalid_user">This user does not exist. Please check your credentials again!</string>
+    <string name="error_invalid_username">This username is not valid</string>
+    <string name="error_invalid_email">Please provide a correct email</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">Dashboard</string>
+
+
+    <!-- Strings related to passing current user JSON and token-->
+    <string name="current_user_json_to_string">CurrUserJsonString</string>
+    <string name="current_user_token">CurrUserToken</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="user_name">Android Studio</string>
+    <string name="user_email">android.studio@android.com</string>
+    <string name="user_preferences_key">com.poop.rumi.rumi.user.preferences</string>
+
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_roommate">RoommateActivity</string>
+
+    <!-- Strings related to ROUTES -->
+    <!-- If server is up -->
+    <string name="base_url">https://rumi-app.herokuapp.com</string>
+    <!-- If server is down, use localhost tag below -->
+    <!--<string name="base_url">http://10.0.2.2:8080</string>-->
+    <string name="login_url">/login</string>
+    <string name="register_url">/register</string>
+    <string name="find_user_by_id_url">/get_user_by_id</string>
+    <string name="roommate_list_url">/user/roommates</string>
+    <string name="find_users_url">/user/roommates/find</string>
+    <string name="roommate_add_url">/user/roommates/add</string>
+    <string name="roommate_delete_url">/user/roommates/delete</string>
+    <string name="roommate_add_static_url">/user/roommates/add/static</string>
+    <string name="transactions_list_url">/user/transactions</string>
+    <string name="change_password_url">/user/setting/changepassword</string>
+    <string name="transaction_add">/user/transactions/add</string>
+    <!-- Only exists on dev branch of rumi-web -->
+    <string name="dashboard_url">/user/transactions/recent</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="search_users">Search users</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

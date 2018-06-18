@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp"
+    android:id="@+id/parent_layout"
+
+    >
+
+    <!--android:background="@color/colorLightGrey"-->
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="4dp"
+        app:cardMaxElevation="2dp"
+        app:cardElevation="1dp"
+        android:layout_centerInParent="true"
+        android:background="#0000"
+
+        >
+
+
+
+        <RelativeLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#feef"
+            android:elevation="20dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                />
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView_image_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:text="Name"-->
+            <!--android:layout_below="@id/image_view"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:gravity="center"-->
+
+            <!--android:textColor="#000"-->
+
+
+            <!--/>-->
+
+            <TextView
+                android:id="@+id/textView_image_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:textColor="#000000"
+                android:background="@drawable/name_round_box"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/add_static_roommate_form_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Can't find user? Add them below!"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <LinearLayout
+        android:id="@+id/name_add_static_roommate_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_static_roommate_form_title"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/add_static_roommate_form_title"
+        tools:layout_editor_absoluteX="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/static_roommate_name"
+                style="@style/EditTextStyleDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/email_add_static_roommate_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_login_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/add_static_roommate_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:text="Add Roommate"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

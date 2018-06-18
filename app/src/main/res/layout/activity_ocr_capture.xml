@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.poop.rumi.rumi.ocr.OcrCaptureActivity">
+    <!--android:id="@+id/topLayout"-->
+
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:visibility="visible">
+
+        <com.poop.rumi.rumi.camera.CameraSourcePreview
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.poop.rumi.rumi.camera.GraphicOverlay
+                android:id="@+id/graphicOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.poop.rumi.rumi.camera.CameraSourcePreview>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnCapturePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:srcCompat="@drawable/cam_icon"
+        app:useCompatPadding="true" />
+
+    <ImageButton
+        android:id="@+id/xMark"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/tickMark"
+        android:layout_marginStart="22dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:fadingEdge="none"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/xmark_icon_64" />
+
+    <ImageButton
+        android:id="@+id/tickMark"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:fadingEdge="none"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tickmark_icon_64" />
+
+</RelativeLayout>

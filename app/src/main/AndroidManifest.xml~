@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< Updated upstream
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poop.rumi.rumi"
+    android:installLocation="auto">
+
+    <!-- Internet Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- To use camera -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera2.full" />
+
+    <!-- To use storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- To debug -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ocr.OcrCaptureActivity"
+            android:label="@string/ocr_activity_main"
+            android:parentActivityName=".DashboardActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="rumi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RoommateActivity"
+            android:label="@string/title_activity_roommate"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".transaction.TransactionActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity android:name=".summary.SummaryActivity" />
+        <activity android:name=".RoommateSearchResultsActivity"></activity>
+    </application>
+
+</manifest> <!-- ===================================== THIS PART WILL START FROM THE CAM ===================================== --><!-- <?xml version="1.0" encoding="utf-8"?> --><!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.poop.rumi.rumi" --><!-- android:installLocation="auto"> --><!-- &lt;!&ndash; Internet Permission &ndash;&gt; --><!-- <uses-permission android:name="android.permission.INTERNET" /> --><!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> --><!-- &lt;!&ndash; To auto-complete the email text field in the login form with the user's emails &ndash;&gt; --><!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> --><!-- <uses-permission android:name="android.permission.READ_PROFILE" /> --><!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> --><!-- &lt;!&ndash; To use camera &ndash;&gt; --><!-- <uses-feature android:name="android.hardware.camera" /> --><!-- <uses-permission android:name="android.permission.CAMERA" /> --><!-- <uses-permission android:name="android.hardware.camera2.full" /> --><!-- &lt;!&ndash; To use storage &ndash;&gt; --><!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> --><!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> --><!-- &lt;!&ndash; To debug &ndash;&gt; --><!-- <uses-permission android:name="android.permission.SET_DEBUG_APP" /> --><!-- <application --><!-- android:allowBackup="true" --><!-- android:fullBackupContent="false" --><!-- android:hardwareAccelerated="true" --><!-- android:icon="@mipmap/ic_launcher" --><!-- android:label="@string/app_name" --><!-- android:roundIcon="@mipmap/ic_launcher_round" --><!-- android:supportsRtl="true" --><!-- android:theme="@style/AppTheme"> --><!-- <meta-data --><!-- android:name="com.google.android.gms.version" --><!-- android:value="@integer/google_play_services_version" /> --><!-- <meta-data --><!-- android:name="com.google.android.gms.vision.DEPENDENCIES" --><!-- android:value="ocr" /> --><!-- <activity --><!-- android:name=".RegisterActivity" --><!-- android:label="@string/title_activity_register" /> --><!-- <activity --><!-- android:name=".LoginActivity" --><!-- android:label="@string/app_name" /> --><!-- <activity --><!-- android:name=".DashboardActivity" --><!-- android:label="@string/title_activity_main" --><!-- android:theme="@style/AppTheme" /> --><!-- <activity --><!-- android:name=".ocr.OcrCaptureActivity" --><!-- android:label="@string/ocr_activity_main" --><!-- android:parentActivityName=".DashboardActivity"> --><!-- <intent-filter> --><!-- <action android:name="android.intent.action.MAIN" /> --><!-- <category android:name="android.intent.category.LAUNCHER" /> --><!-- </intent-filter> --><!-- </activity> --><!-- <activity --><!-- android:name=".MainActivity" --><!-- android:label="rumi"> --><!-- &lt;!&ndash;<intent-filter>&ndash;&gt; --><!-- &lt;!&ndash;<action android:name="android.intent.action.MAIN" />&ndash;&gt; --><!-- &lt;!&ndash;<category android:name="android.intent.category.LAUNCHER" />&ndash;&gt; --><!-- &lt;!&ndash;</intent-filter>&ndash;&gt; --><!-- </activity> --><!-- <activity --><!-- android:name=".RoommateActivity" --><!-- android:label="@string/title_activity_roommate" --><!-- android:theme="@style/AppTheme"> --><!-- </activity> --><!-- <activity android:name=".TransactionActivity"> --><!-- &lt;!&ndash; <intent-filter> &ndash;&gt; --><!-- &lt;!&ndash; <action android:name="android.intent.action.MAIN" /> &ndash;&gt; --><!-- &lt;!&ndash; <category android:name="android.intent.category.LAUNCHER" /> &ndash;&gt; --><!-- &lt;!&ndash; </intent-filter> &ndash;&gt; --><!-- </activity> --><!-- <activity android:name=".SummaryActivity"></activity> --><!-- </application> --><!-- </manifest> --><!-- ================================== THIS PART WILL START FROM THE CAM ===================================== --><!-- ================================THIS PART WILL START FROM LOGIN ========================================== --><!-- <?xml version="1.0" encoding="utf-8"?> --><!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.poop.rumi.rumi" --><!-- android:installLocation="auto"> --><!-- &lt;!&ndash; Internet Permission &ndash;&gt; --><!-- <uses-permission android:name="android.permission.INTERNET" /> --><!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> --><!-- &lt;!&ndash; To auto-complete the email text field in the login form with the user's emails &ndash;&gt; --><!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> --><!-- <uses-permission android:name="android.permission.READ_PROFILE" /> --><!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> --><!-- &lt;!&ndash; To use camera &ndash;&gt; --><!-- <uses-feature android:name="android.hardware.camera" /> --><!-- <uses-permission android:name="android.permission.CAMERA" /> --><!-- <uses-permission android:name="android.hardware.camera2.full" /> --><!-- &lt;!&ndash; To use storage &ndash;&gt; --><!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> --><!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> --><!-- &lt;!&ndash; To debug &ndash;&gt; --><!-- <uses-permission android:name="android.permission.SET_DEBUG_APP" /> --><!-- <application --><!-- android:allowBackup="true" --><!-- android:fullBackupContent="false" --><!-- android:hardwareAccelerated="true" --><!-- android:icon="@mipmap/ic_launcher" --><!-- android:label="@string/app_name" --><!-- android:roundIcon="@mipmap/ic_launcher_round" --><!-- android:supportsRtl="true" --><!-- android:theme="@style/AppTheme"> --><!-- <meta-data --><!-- android:name="com.google.android.gms.version" --><!-- android:value="@integer/google_play_services_version" /> --><!-- <meta-data --><!-- android:name="com.google.android.gms.vision.DEPENDENCIES" --><!-- android:value="ocr" /> --><!-- <activity --><!-- android:name=".RegisterActivity" --><!-- android:label="@string/title_activity_register" /> --><!-- <activity --><!-- android:name=".LoginActivity" --><!-- android:label="@string/app_name" /> --><!-- <activity --><!-- android:name=".DashboardActivity" --><!-- android:label="@string/title_activity_main" --><!-- android:theme="@style/AppTheme" /> --><!-- <activity --><!-- android:name=".ocr.OcrCaptureActivity" --><!-- android:label="@string/ocr_activity_main" --><!-- android:parentActivityName=".DashboardActivity"></activity> --><!-- <activity --><!-- android:name=".MainActivity" --><!-- android:label="rumi"> --><!-- <intent-filter> --><!-- <action android:name="android.intent.action.MAIN" /> --><!-- <category android:name="android.intent.category.LAUNCHER" /> --><!-- </intent-filter> --><!-- </activity> --><!-- <activity --><!-- android:name=".RoommateActivity" --><!-- android:label="@string/title_activity_roommate" --><!-- android:theme="@style/AppTheme"></activity> --><!-- <activity android:name=".TransactionActivity"> --><!-- &lt;!&ndash; <intent-filter> &ndash;&gt; --><!-- &lt;!&ndash; <action android:name="android.intent.action.MAIN" /> &ndash;&gt; --><!-- &lt;!&ndash; <category android:name="android.intent.category.LAUNCHER" /> &ndash;&gt; --><!-- &lt;!&ndash; </intent-filter> &ndash;&gt; --><!-- </activity> --><!-- <activity android:name=".SummaryActivity"></activity> --><!-- </application> --><!-- </manifest> --><!-- ================================THIS PART WILL START FROM LOGIN ========================================== -->
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.poop.rumi.rumi"
+android:installLocation="auto">
+
+<!-- Internet Permission -->
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+<!-- To auto-complete the email text field in the login form with the user's emails -->
+<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+<uses-permission android:name="android.permission.READ_PROFILE" />
+<uses-permission android:name="android.permission.READ_CONTACTS" />
+
+<!-- To use camera -->
+<uses-feature android:name="android.hardware.camera" />
+
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.hardware.camera2.full" />
+
+<!-- To use storage -->
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+<!-- To debug -->
+<uses-permission android:name="android.permission.SET_DEBUG_APP" />
+
+<application
+android:allowBackup="true"
+android:fullBackupContent="false"
+android:hardwareAccelerated="true"
+android:icon="@mipmap/ic_launcher"
+android:label="@string/app_name"
+android:roundIcon="@mipmap/ic_launcher_round"
+android:supportsRtl="true"
+android:theme="@style/AppTheme">
+<meta-data
+android:name="com.google.android.gms.version"
+android:value="@integer/google_play_services_version" />
+<meta-data
+android:name="com.google.android.gms.vision.DEPENDENCIES"
+android:value="ocr" />
+
+<activity
+android:name=".RegisterActivity"
+android:label="@string/title_activity_register" />
+<activity
+android:name=".LoginActivity"
+android:label="@string/app_name" />
+<activity
+android:name=".DashboardActivity"
+android:label="@string/title_activity_main"
+android:theme="@style/AppTheme" />
+<activity
+android:name=".ocr.OcrCaptureActivity"
+android:label="@string/ocr_activity_main"
+android:parentActivityName=".DashboardActivity">
+
+<!--<intent-filter>-->
+<!--<action android:name="android.intent.action.MAIN" />-->
+
+<!--<category android:name="android.intent.category.LAUNCHER" />-->
+<!--</intent-filter>-->
+
+</activity>
+<activity
+android:name=".MainActivity"
+android:label="rumi">
+<intent-filter>
+<action android:name="android.intent.action.MAIN" />
+
+<category android:name="android.intent.category.LAUNCHER" />
+</intent-filter>
+</activity>
+<activity
+android:name=".RoommateActivity"
+android:label="@string/title_activity_roommate"
+android:theme="@style/AppTheme">
+
+</activity>
+<activity android:name=".transaction.TransactionActivity">
+
+<!-- <intent-filter> -->
+<!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+<!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+<!-- </intent-filter> -->
+
+</activity>
+    <activity android:name=".summary.SummaryActivity" />
+</application>
+
+</manifest>
+
+
+<!--===================================== THIS PART WILL START FROM THE CAM =====================================-->
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.poop.rumi.rumi"-->
+<!--android:installLocation="auto">-->
+
+<!--&lt;!&ndash; Internet Permission &ndash;&gt;-->
+<!--<uses-permission android:name="android.permission.INTERNET" />-->
+<!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+
+<!--&lt;!&ndash; To auto-complete the email text field in the login form with the user's emails &ndash;&gt;-->
+<!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+<!--<uses-permission android:name="android.permission.READ_PROFILE" />-->
+<!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
+
+<!--&lt;!&ndash; To use camera &ndash;&gt;-->
+<!--<uses-feature android:name="android.hardware.camera" />-->
+
+<!--<uses-permission android:name="android.permission.CAMERA" />-->
+<!--<uses-permission android:name="android.hardware.camera2.full" />-->
+
+<!--&lt;!&ndash; To use storage &ndash;&gt;-->
+<!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+<!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+
+<!--&lt;!&ndash; To debug &ndash;&gt;-->
+<!--<uses-permission android:name="android.permission.SET_DEBUG_APP" />-->
+
+<!--<application-->
+<!--android:allowBackup="true"-->
+<!--android:fullBackupContent="false"-->
+<!--android:hardwareAccelerated="true"-->
+<!--android:icon="@mipmap/ic_launcher"-->
+<!--android:label="@string/app_name"-->
+<!--android:roundIcon="@mipmap/ic_launcher_round"-->
+<!--android:supportsRtl="true"-->
+<!--android:theme="@style/AppTheme">-->
+<!--<meta-data-->
+    <!--android:name="com.google.android.gms.version"-->
+    <!--android:value="@integer/google_play_services_version" />-->
+<!--<meta-data-->
+    <!--android:name="com.google.android.gms.vision.DEPENDENCIES"-->
+    <!--android:value="ocr" />-->
+
+<!--<activity-->
+    <!--android:name=".RegisterActivity"-->
+    <!--android:label="@string/title_activity_register" />-->
+<!--<activity-->
+    <!--android:name=".LoginActivity"-->
+    <!--android:label="@string/app_name" />-->
+<!--<activity-->
+    <!--android:name=".DashboardActivity"-->
+    <!--android:label="@string/title_activity_main"-->
+    <!--android:theme="@style/AppTheme" />-->
+<!--<activity-->
+    <!--android:name=".ocr.OcrCaptureActivity"-->
+    <!--android:label="@string/ocr_activity_main"-->
+    <!--android:parentActivityName=".DashboardActivity">-->
+
+    <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN" />-->
+
+        <!--<category android:name="android.intent.category.LAUNCHER" />-->
+    <!--</intent-filter>-->
+
+<!--</activity>-->
+<!--<activity-->
+    <!--android:name=".MainActivity"-->
+    <!--android:label="rumi">-->
+    <!--&lt;!&ndash;<intent-filter>&ndash;&gt;-->
+    <!--&lt;!&ndash;<action android:name="android.intent.action.MAIN" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<category android:name="android.intent.category.LAUNCHER" />&ndash;&gt;-->
+    <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
+<!--</activity>-->
+<!--<activity-->
+    <!--android:name=".RoommateActivity"-->
+    <!--android:label="@string/title_activity_roommate"-->
+    <!--android:theme="@style/AppTheme">-->
+
+<!--</activity>-->
+<!--<activity android:name=".TransactionActivity">-->
+
+    <!--&lt;!&ndash; <intent-filter> &ndash;&gt;-->
+    <!--&lt;!&ndash; <action android:name="android.intent.action.MAIN" /> &ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; <category android:name="android.intent.category.LAUNCHER" /> &ndash;&gt;-->
+    <!--&lt;!&ndash; </intent-filter> &ndash;&gt;-->
+
+<!--</activity>-->
+<!--<activity android:name=".SummaryActivity"></activity>-->
+<!--</application>-->
+
+<!--</manifest>-->
+<!--================================== THIS PART WILL START FROM THE CAM =====================================-->
+
+
+<!--================================THIS PART WILL START FROM LOGIN ==========================================-->
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.poop.rumi.rumi"-->
+<!--android:installLocation="auto">-->
+
+<!--&lt;!&ndash; Internet Permission &ndash;&gt;-->
+<!--<uses-permission android:name="android.permission.INTERNET" />-->
+<!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+
+<!--&lt;!&ndash; To auto-complete the email text field in the login form with the user's emails &ndash;&gt;-->
+<!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+<!--<uses-permission android:name="android.permission.READ_PROFILE" />-->
+<!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
+
+<!--&lt;!&ndash; To use camera &ndash;&gt;-->
+<!--<uses-feature android:name="android.hardware.camera" />-->
+
+<!--<uses-permission android:name="android.permission.CAMERA" />-->
+<!--<uses-permission android:name="android.hardware.camera2.full" />-->
+
+<!--&lt;!&ndash; To use storage &ndash;&gt;-->
+<!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+<!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+
+<!--&lt;!&ndash; To debug &ndash;&gt;-->
+<!--<uses-permission android:name="android.permission.SET_DEBUG_APP" />-->
+
+<!--<application-->
+    <!--android:allowBackup="true"-->
+    <!--android:fullBackupContent="false"-->
+    <!--android:hardwareAccelerated="true"-->
+    <!--android:icon="@mipmap/ic_launcher"-->
+    <!--android:label="@string/app_name"-->
+    <!--android:roundIcon="@mipmap/ic_launcher_round"-->
+    <!--android:supportsRtl="true"-->
+    <!--android:theme="@style/AppTheme">-->
+    <!--<meta-data-->
+        <!--android:name="com.google.android.gms.version"-->
+        <!--android:value="@integer/google_play_services_version" />-->
+    <!--<meta-data-->
+        <!--android:name="com.google.android.gms.vision.DEPENDENCIES"-->
+        <!--android:value="ocr" />-->
+
+    <!--<activity-->
+        <!--android:name=".RegisterActivity"-->
+        <!--android:label="@string/title_activity_register" />-->
+    <!--<activity-->
+        <!--android:name=".LoginActivity"-->
+        <!--android:label="@string/app_name" />-->
+    <!--<activity-->
+        <!--android:name=".DashboardActivity"-->
+        <!--android:label="@string/title_activity_main"-->
+        <!--android:theme="@style/AppTheme" />-->
+    <!--<activity-->
+        <!--android:name=".ocr.OcrCaptureActivity"-->
+        <!--android:label="@string/ocr_activity_main"-->
+        <!--android:parentActivityName=".DashboardActivity"></activity>-->
+    <!--<activity-->
+        <!--android:name=".MainActivity"-->
+        <!--android:label="rumi">-->
+        <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+        <!--</intent-filter>-->
+    <!--</activity>-->
+    <!--<activity-->
+        <!--android:name=".RoommateActivity"-->
+        <!--android:label="@string/title_activity_roommate"-->
+        <!--android:theme="@style/AppTheme"></activity>-->
+    <!--<activity android:name=".TransactionActivity">-->
+
+        <!--&lt;!&ndash; <intent-filter> &ndash;&gt;-->
+        <!--&lt;!&ndash; <action android:name="android.intent.action.MAIN" /> &ndash;&gt;-->
+
+
+        <!--&lt;!&ndash; <category android:name="android.intent.category.LAUNCHER" /> &ndash;&gt;-->
+        <!--&lt;!&ndash; </intent-filter> &ndash;&gt;-->
+
+    <!--</activity>-->
+    <!--<activity android:name=".SummaryActivity"></activity>-->
+<!--</application>-->
+
+<!--</manifest>-->
+<!--================================THIS PART WILL START FROM LOGIN ==========================================-->
+
+
+
+
+>>>>>>> Stashed changes

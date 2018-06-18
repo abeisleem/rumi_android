@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ocr.OcrCaptureActivity"
+    android:background="@color/colorPrimary"
+    >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="Prompt"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        />
+
+    <!--https://stackoverflow.com/questions/4495511/how-to-pass-custom-component-parameters-in-java-and-xml-->
+    <!--<if></if>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_name"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Input your name."-->
+    <!--android:textSize="15dp"-->
+    <!--android:layout_below="@id/dialog_title"-->
+    <!--/>-->
+
+    <Button
+        android:id="@+id/dialog_positive_btn"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/dialog_title"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorPrimary"
+        android:text="OK"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/dialog_negative_btn"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dialog_title"
+        android:layout_below="@+id/dialog_title"
+        android:background="@color/colorPrimary"
+        android:text="Cancel"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>

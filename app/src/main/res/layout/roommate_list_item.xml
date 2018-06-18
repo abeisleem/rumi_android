@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/roommate_list_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Roommate Name"
+        android:textSize="24sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TableRow
+            android:layout_width="112dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/roommate_list_preferred_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Preferred Name"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/roommate_list_preferred_name"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Preferred Name" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/roommate_list_address_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Address"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/roommate_list_address"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Address" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/roommate_list_email_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Email"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/roommate_list_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Email" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/roommate_list_cell_phone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Cell Phone"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/roommate_list_cell_phone"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Cell Phone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/roommate_list_home_phone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Home Phone"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/roommate_list_home_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Home Phone" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

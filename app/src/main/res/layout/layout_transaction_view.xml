@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:id="@+id/parent_layout_item_price"
+    android:background="#feef"
+    >
+
+    <RelativeLayout
+        android:id="@+id/parent_layout_item_plus_names"
+        android:layout_width="595dp"
+        android:layout_height="56dp"
+        android:layout_weight="45"
+
+        >
+
+        <TextView
+            android:id="@+id/itemView"
+            android:layout_width="228dp"
+            android:layout_height="35dp"
+            android:text="Item"
+            android:textSize="25dp"
+
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:textColor="#000000"
+
+            />
+
+
+        <TextView
+            android:id="@+id/priceView"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/itemView"
+            android:layout_weight="30"
+            android:gravity="right"
+            android:text="$Price"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="0dp"
+
+            android:textColor="#000000"
+
+            />
+
+        <TextView
+            android:id="@+id/namesView"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:gravity="left"
+
+            android:text="namesArray"
+            android:textSize="15dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="35dp"
+
+            android:textColor="#000000"
+
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+<!--Subhash's code crashed-->
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:weightSum="100"-->
+    <!--android:id="@+id/parent_layout_item_price"-->
+    <!--android:background="@color/colorPrimary"-->
+
+    <!--&gt;-->
+
+<!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/parent_layout_item_plus_names"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="45"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/textView1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="35dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="left"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Item"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="25dp"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/textView2"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="25dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="left"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="namesArray"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="15dp"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+<!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/parent_layout_price_plus_dotButton"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="60dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="55"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:weightSum="100"&ndash;&gt;-->
+    <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/textView3"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="60dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textAlignment="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="$Price"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="30"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="25dp"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/threeDotsButton"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="60dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="70"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="..."&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center_vertical"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textAlignment="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="#feefeffe"&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/parent_layout_item_plus_names"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="45"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/textView1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="35dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="left"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Item"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="25dp"&ndash;&gt;-->
+
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/textView2"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="25dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="left"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="namesArray"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="15dp"&ndash;&gt;-->
+
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/parent_layout_item_plus_names"-->
+        <!--android:layout_width="595dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_weight="45"-->
+
+
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView1"-->
+            <!--android:layout_width="265dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Item"-->
+            <!--android:textSize="25dp"-->
+
+            <!--tools:layout_editor_absoluteX="0dp"-->
+            <!--tools:layout_editor_absoluteY="0dp" />-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView3"-->
+            <!--android:layout_width="117dp"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginEnd="140dp"-->
+            <!--android:layout_weight="30"-->
+            <!--android:gravity="right"-->
+            <!--android:text="$Price"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="20dp"-->
+            <!--tools:ignore="MissingConstraints"-->
+            <!--tools:layout_editor_absoluteX="228dp"-->
+            <!--tools:layout_editor_absoluteY="0dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginStart="0dp"-->
+
+            <!--android:gravity="left"-->
+            <!--android:text="namesArray"-->
+            <!--android:textSize="15dp"-->
+            <!--tools:ignore="MissingConstraints"-->
+            <!--tools:layout_editor_absoluteX="0dp"-->
+            <!--tools:layout_editor_absoluteY="35dp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/threedotbutton"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="-140dp"-->
+            <!--android:layout_toEndOf="@+id/textView3"-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:text="..." />-->
+    <!--</RelativeLayout>-->
+
+
+<!--</LinearLayout>-->

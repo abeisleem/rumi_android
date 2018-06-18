@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.poop.rumi.rumi.transaction.TransactionActivity"
+
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/topPanelButtons"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+
+        android:orientation="horizontal"
+        android:background="#feef"
+
+        >
+
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:background="@drawable/back_button"
+
+            />
+
+        <TextView
+            android:id="@+id/store_restaurant"
+            android:layout_width="182dp"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/button_back"
+            android:layout_alignBottom="@+id/button_back"
+            android:layout_gravity="fill_horizontal"
+            android:layout_toEndOf="@+id/button_back"
+            android:layout_toStartOf="@+id/button_next"
+            android:gravity="center"
+            android:hint="Store/Restaurant"
+            android:textAlignment="center"
+            android:textSize="20dp"
+
+            android:textColor="#000000"
+
+            />
+
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="Next"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:background="@drawable/next_button"
+
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+
+        >
+
+        <ListView
+            android:id="@+id/vertical_list_item_price_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#feef"
+
+
+            >
+
+
+        </ListView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:background="#feef"
+
+            >
+
+
+            <Button
+                android:id="@+id/button_add_more_item_price"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_alignParentBottom="true"
+                android:text="+Add an item"
+                android:textStyle="italic"
+                android:background="#0000"
+
+                />
+
+            <!--TODO: add price shift down -->
+
+            <!--<Button-->
+                <!--android:id="@+id/movePriceDown"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="75dp"-->
+                <!--android:layout_marginLeft="0dp"-->
+                <!--android:padding="0dp"-->
+                <!--android:layout_marginBottom="0dp"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:text="move prices one down"-->
+                <!--android:textStyle="italic"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:background="@color/colorPrimary"-->
+                <!--android:textSize="10dp"-->
+                <!--/>-->
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_add_splitters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#feef"
+        android:tooltipText="Add Name/Nickname"
+        >
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/horizontal_recycler_view"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:background="#feef"
+
+
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <Button
+            android:id="@+id/button_add_person"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textSize="20dp"
+
+
+            tools:layout_editor_absoluteX="296dp"
+            tools:layout_editor_absoluteY="0dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/name_round_box"
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
